@@ -17,11 +17,13 @@ So how do we find valid values for `n` within a range?
 Let's call our range `a-b`.
 
 Let's define the set of IDs between $a$ and $b$ as $\Phi(a, b)$.
+
 $$
 \Phi(a, b) = \{ n.n ~ | ~ a \leq n.n \leq b ~\land~ n \in \mathbb N\}
 $$
 
 If we call our input ranges $R$, then we can express the solution as
+
 $$
 S = \sum_{(a, b) \in R} \left[ \sum_{\bar n \in \Phi(a, b)} \bar n \right]
 $$
