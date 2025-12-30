@@ -79,3 +79,20 @@ def up(x: int) -> int:
 ```
 
 `down` follows a very similar structure.
+
+### Time Complexity
+
+While I'm not going to do a full analysis, I want to note a couple things.
+
+Firstly, this is a [pseudo-polynomial time](https://en.wikipedia.org/wiki/Pseudo-polynomial_time) algorithm.
+The runtime depends on the sizes of the ranges as well as the quantity of them.
+
+Secondly, there is a linear bottleneck that's probably possible to solve in constant time.
+Specifically, this sum:
+
+$$
+\sum_{\bar n \in \Phi(a, b)} \bar n
+$$
+
+It's totally possible that this expression has a nice, closed form solution that can be implemented in $O(1)$ time.
+If so, this algorithm would have a linear time complexity, ignoring any big integer summation.
