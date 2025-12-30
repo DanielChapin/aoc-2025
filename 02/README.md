@@ -19,7 +19,7 @@ Let's call our range `a-b`.
 Let's define the set of IDs between $a$ and $b$ as $\Phi(a, b)$.
 
 $$
-\Phi(a, b) = \{ n.n ~ | ~ a \leq n.n \leq b ~\land~ n \in \mathbb N\}
+\Phi(a, b) = \lbrace n.n ~ | ~ a \leq n.n \leq b ~\land~ n \in \mathbb N \rbrace
 $$
 
 If we call our input ranges $R$, then we can express the solution as
